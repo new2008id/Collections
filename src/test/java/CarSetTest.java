@@ -57,6 +57,12 @@ class CarSetTest {
         assertFalse(carSet.contains(new Car("brand3", 3)));
     }
 
+    @Test
+    public void whenCarSetIsEmptyThenReturnFalseContinue() {
+        carSet.clear();
+        assertFalse(carSet.contains(new Car("brand33", 3)));
+    }
+
 //    @Test
 //    public void addNullElementTest() {
 //        assertThrows(NullPointerException.class, () -> carSet.add(null));
